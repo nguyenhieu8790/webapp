@@ -32,7 +32,7 @@ def dag_template(
     with DAG(
         dag_id=dag_id,
         default_args=default_args,
-        schedule_interval="*/5 * * * *",  # run every 5 minutes
+        schedule="*/5 * * * *",  # every 5 minutes
         catchup=False,
     ) as dag:
 
